@@ -1,4 +1,4 @@
-//import express from 'express';
+/import express from 'express';
 import connectToMongoDB from './src/config/db.js';
 import dotenv from 'dotenv';
 import cors from 'cors';
@@ -39,4 +39,5 @@ app.use('/api', petCareRouter);  // '/api' prefix for all routes defined in petC
 app.listen(port, () => {
   console.log(`Server running on port ${port}`);
 });
+
 
