@@ -1,6 +1,6 @@
 import User from "../models/userModel.js";
 import bcrypt from 'bcryptjs';
-
+import bcrypt from 'bcryptjs'; // changed this
 // Signup Function
 export const Signup = async (req, res) => {
   try {
@@ -203,3 +203,4 @@ export const deletePet = async (req, res) => {
     res.status(500).json({ message: "Internal Server Error" });
   }
 };
+
